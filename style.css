@@ -1,0 +1,89 @@
+.firstlabel{
+  position:relative;
+  font-size:12px;
+  left:-408px;
+  top:19px;
+  color:grey;
+}
+.lastlabel{
+  position:relative;
+  font-size:12px;
+  left:-230px;
+  top:19px;
+  color:grey;
+}
+
+.names{
+  width:17%;
+}
+.email{
+  font-size:18px;
+  font-weight:700;
+}
+.email_label{
+  position:relative;
+  color:black;
+  font-size:13px;
+  left:2px;
+  top:-0.5px;
+  color:grey;
+  width:38%;
+  height:20px;
+}
+.exp{
+  font-size:18px;
+  font-weight:700;
+}
+.rate {
+    position:relative;
+    height: 46px;
+    left:-975px;
+    top:-20px; 
+}
+.rate:not(:checked) > input {
+    position:absolute;
+  top:-9999px;
+  
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.grey_color{
+  background-color:rgb(235, 235, 235);
+  font-family: "Times New Roman", Times, serif;
+}
+.white_color{
+  font-family: "Times New Roman", Times, serif;
+}
+.radios{
+  text-align:center;
+}
+.red{
+  color:red;
+}
+.submit{
+  width:11%;
+}
