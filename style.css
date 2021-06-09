@@ -37,7 +37,7 @@
 .rate {
     position:relative;
     height: 46px;
-    left:-1400px;
+    left:-1300px;
     top:-20px; 
 }
 .rate:not(:checked) > input {
