@@ -1,7 +1,7 @@
 .firstlabel{
   position:relative;
   font-size:12px;
-  left:-520px;
+  left:-522px;
   top:19px;
   color:grey;
 }
@@ -37,7 +37,7 @@
 .rate {
     position:relative;
     height: 46px;
-    left:-975px;
+    left:-1800px;
     top:-20px; 
 }
 .rate:not(:checked) > input {
