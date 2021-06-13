@@ -1,7 +1,10 @@
+.rate {
+    position:relative;
+    height: 46px; 
+}
 .rate:not(:checked) > input {
     position:absolute;
   top:-9999px;
- 
 }
 .rate:not(:checked) > label {
     float:left;
