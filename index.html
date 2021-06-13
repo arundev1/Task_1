@@ -7,24 +7,35 @@
     <title>Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-  <link rel="stylesheet" href="style.css">
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="col-12 col-sm-12 col-md-12">
               <fieldset class="border m-2 p-4 responsive-fieldset">
                 <form>
                     <div class="form-group">
                        <label for="name"><strong>Name<span class="red">*</span> </strong></label><br>
-    <input type="text" id="name" placeholder="Enter first Name" class="names">
-    <input type="text" id="name" placeholder="Enter last Name" class="names">
-  <label class="firstlabel">First</label>
-  <label class="lastlabel">Last</label>
-      </div>
-                    <div class="form-group">
-                      <label for="email"><strong> Email<span class="red">*</span></strong></label><br>
-    <input type="email" placeholder="Enter your email" minlength="4" class="email_label" maxLength="15"class="form-control" id="email" required>
+                      <div class="form-row">
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="First name">
+       <small id="first" class="form-text text-muted">First</small>
+    </div>
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="Last name">
+      <small id="last" class="form-text text-muted">Last</small>
+    </div>
   </div>
+                      <div class="row">
+                    <div class="form-group col-md-8">
+                     
+   
+    <label for="Email"><strong> Email<span class="red">*</span></strong></label>
+    <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+  
+  </div>
+                      </div>
+                      
+                      
                     <div class="form-group">
                       <label for="exp"><strong>Experience</strong><span class="red">*</span></label>
 <div class="rate">
@@ -40,11 +51,13 @@
     <label for="star1" title="text">1 star</label>
   </div><br><br>
                       <p class="p-2">Overall,how would you rate your experience with us?</p> 
-                       <div class="form-group">
+                       
                       
                  
-  <label for="sat"><strong>How satisfied are you with</strong><span class="red">*</span></label> 
-                      <table class="table" style=width:98%>
+  <label for="exp"><strong>How satisfied are you with</strong><span class="red">*</span></label> 
+                      <div class="table-responsive">
+                        <table class="table" style=width:98%>
+                        
      <thead>
                         
      
@@ -100,10 +113,15 @@
        </tr>
 
          </tbody>
-                         </table>
-                          </div>
-                            <label for="like"><strong>How likely are you to</strong><span class="red">*</span></label>
-  <table class="table" style= width:98%>
+                        </table>
+                      </div>
+                          
+                            <label for="exp"><strong>How likely are you to</strong><span class="red">*</span></label>
+                          <div class="table-responsive">
+                          
+                          
+                        <table class="table" style=width:98%>
+
      <thead>
      
          <tr>
@@ -159,11 +177,12 @@
  
          </tbody>
 </table>
+                  </div>
                       <div class="form-group">
                         <label for="add"><strong>Additional comments or Suggestions</strong></label><br>
     <textarea name="add" cols="151" rows="5" minLength="20"  class="form-control" required placeholder="Enter Comments" id="address2"></textarea>
                     </div> 
-                  
+                      
                  <button type="submit" class="btn btn-primary">Submit</button>   
                   </form>
               </fieldset>
