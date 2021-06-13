@@ -1,7 +1,7 @@
 .rate:not(:checked) > input {
     position:absolute;
   top:-9999px;
-  
+ 
 }
 .rate:not(:checked) > label {
     float:left;
@@ -41,4 +41,11 @@
 }
 .red{
   color:red;
+}
+.responsive-fieldset {
+  display:table-cell;
+  width: 98%
+}
+.fieldset{
+  padding:2em;
 }
