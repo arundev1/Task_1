@@ -42,10 +42,3 @@
 .red{
   color:red;
 }
-.responsive-fieldset {
-  display:table-cell;
-  width: 98%
-}
-.fieldset{
-  padding:2em;
-}
