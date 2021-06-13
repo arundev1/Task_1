@@ -1,52 +1,30 @@
+.responsive-fieldset {
+  display:table-cell;
+  width: 98%
+}
+
 .firstlabel{
   position:relative;
   font-size:12px;
-  left:-522px;
+  left:-378px;
   top:19px;
   color:grey;
 }
 .lastlabel{
   position:relative;
   font-size:12px;
-  left:-286px;
+  left:-215px;
   top:19px;
   color:grey;
 }
 
-.names{
-  width:17%;
-}
-.email{
-  font-size:18px;
-  font-weight:700;
-}
-.email_label{
-  position:relative;
-  color:black;
-  font-size:13px;
-  left:2px;
-  top:-0.5px;
-  color:grey;
-  width:38%;
-  height:20px;
-}
-.exp{
-  font-size:18px;
-  font-weight:700;
-}
-.rate {
-    position:relative;
-    height: 46px;
-    left:-1320px;
-    top:-20px; 
-}
 .rate:not(:checked) > input {
     position:absolute;
   top:-9999px;
   
 }
 .rate:not(:checked) > label {
-    float:right;
+    float:left;
     width:1em;
     overflow:hidden;
     white-space:nowrap;
@@ -83,7 +61,4 @@
 }
 .red{
   color:red;
-}
-.submit{
-  width:11%;
 }
