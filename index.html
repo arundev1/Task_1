@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
- <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 <body>
-<fieldset>
-<form>
- <div>
-   <label for="name"><strong>Name<span class="red">*</span> </strong></label><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <fieldset class="border m-2 p-4 responsive-fieldset">
+                <form>
+                    <div class="form-group">
+                       <label for="name"><strong>Name<span class="red">*</span> </strong></label><br>
     <input type="text" id="name" placeholder="Enter first Name" class="names">
     <input type="text" id="name" placeholder="Enter last Name" class="names">
   <label class="firstlabel">First</label>
   <label class="lastlabel">Last</label>
       </div>
-  <br><br>
-  <div>
- <div>
-   <label for="email"><strong> Email<span class="red">*</span></strong></label><br>
-    <input type="email" placeholder="Enter your email" minlength="4" class="email_label" maxLength="15" id="email" required>
+                    <div class="form-group">
+                      <label for="email"><strong> Email<span class="red">*</span></strong></label><br>
+    <input type="email" placeholder="Enter your email" minlength="4" class="email_label" maxLength="15"class="form-control" id="email" required>
   </div>
-  <h4>Experience<span class="red">*</span></h4>
+                    <div class="form-group">
+                      <label for="exp"><strong>Experience</strong><span class="red">*</span></label>
 <div class="rate">
     <input type="radio" id="star5" name="rate" value="5" />
     <label for="star5" title="text">5 stars</label>
@@ -32,12 +38,15 @@
     <label for="star2" title="text">2 stars</label>
     <input type="radio" id="star1" name="rate" value="1" />
     <label for="star1" title="text">1 star</label>
-  </div>
-  Overall,how would you rate your experience with us?
-  <h4><strong>How satisfied are you with<span class="red">*</span></strong></h4>
-  
-<table class="table table-responsive" style=width:98%>
+  </div><br><br>
+                      <p class="p-2">Overall,how would you rate your experience with us?</p> 
+                       <div class="form-group">
+                      
+                 
+  <label for="sat"><strong>How satisfied are you with</strong><span class="red">*</span></label> 
+                      <table class="table" style=width:98%>
      <thead>
+                        
      
          <tr>
            <th></th>
@@ -91,10 +100,10 @@
        </tr>
 
          </tbody>
-</table>
-  <br>
-  <h4><strong>How likely are you to<span class="red">*</span></strong></h4>
-  <table class="table table-responsive" style=width:98%>
+                         </table>
+                          </div>
+                            <label for="like"><strong>How likely are you to</strong><span class="red">*</span></label>
+  <table class="table" style= width:98%>
      <thead>
      
          <tr>
@@ -150,16 +159,22 @@
  
          </tbody>
 </table>
-  <br>
-  <div>
-    <label for="address"><strong>Additional comments or suggestions</strong></label><br>
-    <textarea name="address" cols="151" rows="5" minLength="20" required placeholder="Add comments or suggestions" id="address"></textarea>
-      </div>  
-  <button class="submit"> Submit</button>
-
-  </fieldset>
- 
-</body>
+                      <div class="form-group">
+                        <label for="add"><strong>Additional comments or Suggestions</strong></label><br>
+    <textarea name="add" cols="151" rows="5" minLength="20"  class="form-control" required placeholder="Enter Comments" id="address2"></textarea>
+                    </div> 
+                  
+                 <button type="submit" class="btn btn-primary">Submit</button>   
+                  </form>
+              </fieldset>
+                
+            </div>
+        </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
   
            
